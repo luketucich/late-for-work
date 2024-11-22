@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dv0q7d7s566ew"]
+[gd_scene load_steps=4 format=3 uid="uid://dv0q7d7s566ew"]
 
 [ext_resource type="PackedScene" uid="uid://c0wgyvm8ktyi1" path="res://scenes/player.tscn" id="1_jc0id"]
+[ext_resource type="PackedScene" uid="uid://cgdft40exran2" path="res://scenes/coffee_coin.tscn" id="2_4slk7"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_45ohl"]
 
@@ -18,3 +19,6 @@ position = Vector2(0, 18)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(0, 7)
 shape = SubResource("WorldBoundaryShape2D_45ohl")
+
+[node name="CoffeeCoin" parent="." instance=ExtResource("2_4slk7")]
+position = Vector2(23, -8)
